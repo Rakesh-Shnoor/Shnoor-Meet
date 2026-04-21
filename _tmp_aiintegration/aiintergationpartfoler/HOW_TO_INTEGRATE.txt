@@ -1,0 +1,32 @@
+# Shnoor AI Meeting Integration - Quick Setup
+
+This folder contains all the source files needed to add the AI Meeting, Multi-Speaker Captions, and Navigation Bot features to your application.
+
+## 📁 Files Included
+- `MeetingRoom.jsx`: Main meeting UI and transcription loop.
+- `MeetingSidebar.jsx` & `ChatbotPanel.jsx`: AI Smart Sidebar and Navigation Bot.
+- `useWebRTC.js`: Core signaling and WebRTC coordination.
+- `groqService.js` & `geminiService.js`: AI API wrappers.
+- `main.py` & `database.py`: Backend routing and DB logic.
+- `.env`: Contains the active API keys (Groq & OpenRouter).
+- `requirements.txt`: Python package dependencies.
+- `DATABASE_SETUP.sql`: Database table schema.
+
+## 🚀 Integration Steps
+
+### 1. Database
+Run the commands in `DATABASE_SETUP.sql` in your SQL tool to create the target tables.
+
+### 2. Backend
+- Copy `main.py` and `database.py` into your server folder.
+- Run: `pip install -r requirements.txt`
+- Ensure your `.env` matches the one provided.
+
+### 3. Frontend
+- Add the `.jsx` and `.js` files to your React project.
+- Install dependencies:
+  `npm install lucide-react react-router-dom date-fns tesseract.js`
+- Import and use `MeetingRoom.jsx` in your app router.
+
+---
+*Created for Shnoor International LLC Platform*

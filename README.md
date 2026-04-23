@@ -20,8 +20,8 @@
 - [API Overview](#api-overview)
 - [Features](#features)
 - [Deployment](#deployment)
-- [Credits](#credits)
-- [License](#license)
+- [Credits](#-credits)
+- [License](#-license)
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-- [Overview]
+- [Overview](#Overview)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
@@ -20,13 +20,12 @@
 - [API Overview](#api-overview)
 - [Features](#features)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 
 ---
 
 ## Overview
 
-Shnoor Meetings is a production-ready video conferencing platform that enables real-time peer-to-peer video calls, meeting scheduling, in-meeting chat, live captions, and an AI-powered chatbot assistant — all within a premium, theme-customizable UI.
+Shnoor Meetings is a production-ready video conferencing platform that enables real-time video calls, meeting scheduling, in-meeting chat, live captions, and an AI-powered chatbot assistant — all within a premium, theme-customizable UI.
 
 ---
 
@@ -34,12 +33,12 @@ Shnoor Meetings is a production-ready video conferencing platform that enables r
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | React 19, Vite, Tailwind CSS v4, Framer Motion |
-| **Backend** | FastAPI, Uvicorn, WebSockets |
-| **Database** | PostgreSQL (via psycopg2) |
+| **Frontend** | React 19, Vite, Tailwind CSS v4 |
+| **Backend** | FastAPI, WebSockets |
+| **Database** | PostgreSQL |
 | **Auth** | Google OAuth 2.0 (`@react-oauth/google`), Firebase |
-| **Real-time** | WebRTC (via `useWebRTC` hook), WebSocket signaling |
-| **AI / Captions** | Groq API, OpenRouter API (DeepSeek R1) |
+| **Real-time** | WebRTC (via `useWebRTC` hook) |
+| **AI / Captions** | Groq API, OpenRouter API |
 | **Deployment** | Render.com |
 
 ---
@@ -121,10 +120,6 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your database credentials
 
 # Initialise the database schema
 psql -U postgres -d shnoor_meetings -f schema.sql
@@ -245,10 +240,3 @@ This project is configured for deployment to **Render.com**.
 
 ---
 
-## Contributing
-
-1. Fork the repository and create a feature branch: `git checkout -b feature/your-feature`
-2. Make your changes and commit: `git commit -m "feat: describe your change"`
-3. Push to your fork and open a pull request against `main`.
-
-Please keep PRs focused and include a clear description of what was changed and why.

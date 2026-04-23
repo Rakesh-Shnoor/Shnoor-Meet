@@ -20,6 +20,8 @@
 - [API Overview](#api-overview)
 - [Features](#features)
 - [Deployment](#deployment)
+- [Credits](#credits)
+- [License](#license)
 
 ---
 
@@ -240,3 +242,30 @@ This project is configured for deployment to **Render.com**.
 
 ---
 
+---
+
+## 🙌 Credits
+
+This project was developed as part of a collaborative effort.
+
+### 👨‍💻 Contributors
+- **B. Rakesh Reddy** – Frontend Development (UI design, component development, and interface implementation)  
+- **Dasari Aravind Kumar** – Backend Development and API integration  
+- **Medhari Rakesh** – Database management and deployment  
+- **Aditya Dhiman** – Project Lead (architecture design, coordination, and overall project guidance)
+
+### 🤝 Acknowledgements
+- Open-source community for tools and libraries
+- WebRTC for real-time communication
+- Supabase & Firebase for authentication and services
+- Groq & OpenRouter APIs for AI features
+
+---
+
+## 📄 License
+
+This project is proprietary software owned by **Shnoor International LLC**.
+
+All rights reserved. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without prior written permission.
+
+---
